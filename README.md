@@ -6,6 +6,26 @@ Este repositorio de GitHub es un ejemplo de un XML sobre el catálogo de Netflix
 ## 🗂️ESTRUCTURA
 Se divide en tres secciones; películas, series y documentales. Estas secciones se dividen en película, serie o documental respectivamente. Estos elementos deben tener nombre, género y año o número de episodios en el caso de los documentales. Además cada elemento requiere de un índice como atributo.
 
+``` texto
+netflix
+│
+├── Películas
+├──── Película
+├────── Título
+├────── Género
+├────── Año
+├── Series
+├──── Serie
+├────── Título
+├────── Género
+├────── Año
+├── Documentales
+├────── Documental
+├────── Título
+├────── Contenido
+└────── Episodios
+```
+
 ## 📁ARCHIVO DTD
 El archivo .dtd valida que en el XML haya una sola etiqueta raíz llamada Netflix. Que los elemento se encuentren en el orden de los elementos además de que permite que haya varios. Obliga a que cada uno de estos elementos tengan el atributo id. Por último permite que las etiquetas contengan texto
 
