@@ -1,0 +1,19 @@
+<!ELEMENT netflix (peliculas, series, documentales)>
+
+<!ELEMENT peliculas (pelicula+)>
+<!ELEMENT pelicula (titulo, genero, anio)>
+<!ATTLIST pelicula id CDATA #REQUIRED>
+
+<!ELEMENT series (serie+)>
+<!ELEMENT serie (titulo, genero, anio)>
+<!ATTLIST serie id CDATA #REQUIRED>
+
+<!ELEMENT documentales (documental+)>
+<!ELEMENT documental (titulo, contenido, episodios)>
+<!ATTLIST documental id CDATA #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT episodios (#PCDATA)>
